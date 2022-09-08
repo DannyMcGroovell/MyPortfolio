@@ -1,0 +1,7 @@
+GLUquadric* earth = gluNewQuadric();
+gluQuadricNormals(earth, GLU_SMOOTH);
+gluQuadricTexture(earth, GL_TRUE);
+glEnable(GL_TEXTURE_2D);
+LoadGLTexture("C:\\glut_example\\earth_sphere.jpg");
+***
+glDisable(GL_TEXTURE_2D);
