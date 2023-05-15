@@ -1,0 +1,44 @@
+<html>
+    <head>
+	<title>ќдна из лучших игр на свете</title>
+	<script type="text/javascript">
+	    var chet = 0;
+	    window.onload = function () { setTimeout(frout, 3000); }
+	    function frout() {
+		chet++;
+		if (chet>8) {chet=0;}
+		    switch(chet) {
+		    case 1:
+			document.getElementById('img').src = "image1.jpeg";
+			break;
+		    case 2:
+			document.getElementById('img').src = "image2.jpeg";
+			break;
+		    case 3:
+			document.getElementById('img').src = "image3.jpeg";
+			break;
+		    case 4:
+			document.getElementById('img').src = "image4.jpeg";
+			break;
+		    case 5:
+			document.getElementById('img').src = "image5.jpeg";
+			break;
+		    case 6:
+			document.getElementById('img').src = "image6.jpeg";
+			break;
+		    case 7:
+			document.getElementById('img').src = "image7.jpeg";
+			break;
+		    case 8:
+			document.getElementById('img').src = "image8.jpeg";
+			chet = 0;
+			break;
+			}
+		    setTimeout(frout, 3000);
+		}
+	</script> 
+    </head>
+    <body>
+	<p><img src="" onclick="frout();" id="img" alt="" /></p>
+    </body>
+</html>
